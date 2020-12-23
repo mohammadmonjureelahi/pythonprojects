@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>You submitted the following data:</p>
+<table>
+<tr><td>Value of a:</td><td>{{ the_phrase1 }}</td></tr>
+<tr><td>Value of b:</td><td>{{ the_phrase2 }}</td></tr>
+<tr><td>Value of c:</td><td>{{ the_phrase3 }}</td></tr>
+</table>
+
+<p>When {{the_phrase1 }} , {{the_phrase2 }} and {{the_phrase3 }} are entered as a, b and c respectively, the following 
+results are returned:</p>
+<h3>x1 = {{ the_results1 }}</h3>
+<h3>x2 = {{ the_results2 }}</h3>
+
+
+{% endblock body %}

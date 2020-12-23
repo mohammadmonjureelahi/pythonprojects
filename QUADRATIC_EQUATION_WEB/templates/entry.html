@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+
+<form method='POST' action='/quad'>
+<table>
+<p>Use this form to submit the coefficients of the Quadratic Equation.</p>
+<h3>N.B. Please enter integer values for a, b and c!</h3>
+<tr><td>Value of a:</td><td><input name='phrase1' type='number' width='60'></td></tr>
+<tr><td>Value of b:</td><td><input name='phrase2' type='number' width='60'></td></tr>
+<tr><td>Value of c:</td><td><input name='phrase3' type='number' width='60'></td></tr>
+</table>
+<p>When you're ready, click the below button:</p>
+<p><input value='Calculate the roots as x1 and x2!' type='SUBMIT'></p>
+</form>
+
+
+{% endblock body %}
